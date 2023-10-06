@@ -20,11 +20,6 @@ public class Ej04 {
         int edad = scanner.nextInt();
 
         String MayMen = (edad >= 18) ? "Es mayor de edad" : "No es mayor de edad";
-//        if (edad >= 18) {
-//            System.out.println("Es mayor de edad");
-//        } else {
-//            System.out.println("No es mayor de edad");
-//        }
         System.out.println(MayMen);
         
         System.out.print("mostrar la edad: ");

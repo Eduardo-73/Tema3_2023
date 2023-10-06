@@ -29,6 +29,6 @@ public class Ej02 {
         System.out.println(MayorMenor0);
         
         //C)
-        final int VALOR_ABSOLUTO = 30;
+        int resultadoC = (numeroX < 0)? (-numeroX): numeroX;
     }
 }
