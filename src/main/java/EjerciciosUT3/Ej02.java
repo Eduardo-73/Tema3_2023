@@ -19,8 +19,7 @@ public class Ej02 {
         System.out.println("Introduce un número: ");
         int numeroX = teclado.nextInt();
         
-        String MayMen = (numeroX > 135) ? "mayor" : "menor";
-        String resultado = MayMen;
+        String resultado = (numeroX > 135) ? "mayor" : "menor";
         
         System.out.println(resultado);
         
