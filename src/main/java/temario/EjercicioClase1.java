@@ -78,11 +78,24 @@ public class EjercicioClase1 {
 
                 break;
             case 3:
+                System.out.println("Introduce 3 números ");
+                System.out.print("Número 1º: ");
+                int num1 = teclado.nextInt();
+                System.out.print("Número 2º: ");
+                int num2 = teclado.nextInt();
+                System.out.print("Número 3º: ");
+                int num3 = teclado.nextInt();
 
-                System.out.print("Introduce 3 números ");
-                String numeros = teclado.nextLine();
-                int horas = numeros.charAt(1);
+                if ((num1 >= 1 || num1 <= 24) && (num2 >= 1 || num2 <= 60)
+                        && (num3 >= 1 || num3 <= 60)) {
+                    System.out.println("La hora que has elegido es válida");
+                    System.out.printf("%d : %d : %d", num1,
+                            num2, num3);
+                } else {
+                    System.out.println("La hora que has elegido no es válida");
+                }
                 break;
+
             default:
                 System.out.println("Has elegido terminado el programa");
         }
