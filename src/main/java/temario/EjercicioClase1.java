@@ -74,6 +74,7 @@ public class EjercicioClase1 {
                         System.out.println("Diciembre");
                     default ->
                         System.out.println("Mes no válido");
+
                 }
 
                 break;
@@ -86,14 +87,31 @@ public class EjercicioClase1 {
                 System.out.print("Número 3º: ");
                 int num3 = teclado.nextInt();
 
-                if ((num1 >= 1 || num1 <= 24) && (num2 >= 1 || num2 <= 60)
-                        && (num3 >= 1 || num3 <= 60)) {
+                if ((num1 >= 1 && num1 <= 24) && (num2 >= 0 && num2 <= 59)
+                        && (num3 >= 0 && num3 <= 59)) {
                     System.out.println("La hora que has elegido es válida");
                     System.out.printf("%d : %d : %d", num1,
                             num2, num3);
                 } else {
                     System.out.println("La hora que has elegido no es válida");
                 }
+
+                //opcion B
+                /*
+                if (num1 >= 0 && num1 <= 23) {
+                    if (num2 >= 0 && num2 <= 59) {
+                        if (num3 >= 0 && num3 <= 59) {
+                            System.out.println("Hora correcta");
+                            System.out.printf("%d : %d : %d", num1,
+                                    num2, num3);
+                        }
+                    } else {
+                        System.out.println("Los minutos estan mal");
+                    }
+                } else {
+                    System.out.println("Las horas estan mal");
+                }
+                 */
                 break;
 
             default:
